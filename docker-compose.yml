@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
 
@@ -12,7 +12,7 @@ services:
     environment:
       ES_JAVA_OPTS: "-Xmx256m -Xms256m"
     networks:
-      - elk
+      - softleader
 
   logstash:
     build: logstash/
@@ -24,7 +24,7 @@ services:
     environment:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
     networks:
-      - elk
+      - softleader
     depends_on:
       - elasticsearch
 
@@ -35,11 +35,12 @@ services:
     ports:
       - "5601:5601"
     networks:
-      - elk
+      - softleader
     depends_on:
       - elasticsearch
 
 networks:
 
-  elk:
-    driver: bridge
+  softleader:
+    external:
+        name: softleader
