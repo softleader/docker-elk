@@ -1,0 +1,2 @@
+# contents of ./patterns/postfix:
+POSTFIX_QUEUEID [0-9A-F]{10,11}
