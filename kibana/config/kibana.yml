@@ -13,6 +13,6 @@ elasticsearch.url: http://elasticsearch:9200
 xpack:
   monitoring.enabled: true
   security.enabled: false
-  ml.enabled: false
+  ml.enabled: true
   graph.enabled: false
   reporting.enabled: false
