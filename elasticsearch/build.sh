@@ -1,1 +1,1 @@
-docker build -t softleader/elasticsearch:v6 .
+docker build -t softleader/elasticsearch:v6.5.4 .
