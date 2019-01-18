@@ -1,6 +1,6 @@
 # https://github.com/elastic/logstash-docker
 # https://www.elastic.co/guide/en/logstash/current/_pulling_the_image.html
-FROM docker.elastic.co/logstash/logstash:6.1.0
+FROM docker.elastic.co/logstash/logstash:6.5.4
 
 # Add your logstash plugins setup here
 # Example: RUN logstash-plugin install logstash-filter-json

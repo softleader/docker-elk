@@ -12,4 +12,4 @@ path.config: /usr/share/logstash/pipeline
 xpack:
   monitoring:
     enabled: true
-    elasticsearch.url: http://elasticsearch:9200
+    elasticsearch.url: ${ES_SCHEMA:http}://${ES_HOST:elasticsearch}:${ES_PORT:9200} 
