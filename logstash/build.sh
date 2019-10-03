@@ -1,1 +1,1 @@
-docker build -t softleader/logstash:v6.5.4 .
+docker build -t softleader/logstash:v6.6.1 .
